@@ -9,7 +9,7 @@ app.use(express.json());
 let orders = [];
 
 // The Product Service URL (adjust the IP address to match your Product Service VM)
-const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://<PRODUCT_SERVICE_VM_IP>:3000';
+const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://198.168.100.5:3000';
 
 // Get all orders
 app.get('/orders', (req, res) => {
